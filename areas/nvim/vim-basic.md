@@ -2,7 +2,7 @@
 id: vim-basic
 slug: vim-basic
 createdDate: 2023-09-02
-updatedDate: 2023-12-29
+updatedDate: 2023-12-31
 ---
 
 # Vim
@@ -69,45 +69,62 @@ updatedDate: 2023-12-29
 ## inlay hint
 0.10 version 이후부터 사용가능(2023/10/03 기준으로는 nightly version)
 ```lua
--- :help inlay_hint
 if vim.lsp.inlay_hint then
-  vim.keymap.set(
-    "n",
-    "<leader>uh",
-    function() vim.lsp.inlay_hint(0, nil) end, -- 0은 현재 buffer 지정
-    { desc = "Toggle Inlay Hints" }
-  )
+  vim.keymap.set("n", "<leader>uh", function()
+    if vim.lsp.inlay_hint.is_enabled() then
+      vim.lsp.inlay_hint.enable(0, false)
+    else
+      vim.lsp.inlay_hint.enable(0, true)
+    end
+  end, { desc = "Toggle Inlay Hints" })
 end
 ```
 
 ```lua
--- https://github.com/typescript-language-server/typescript-language-server#inlay-hints-textdocumentinlayhint
-tsserver = {
-  typescript = {
-    inlayHints = {
-      includeInlayEnumMemberValueHints: true;
-      includeInlayFunctionLikeReturnTypeHints: true;
-      includeInlayFunctionParameterTypeHints: true;
-      includeInlayParameterNameHints: 'all',
-      includeInlayParameterNameHintsWhenArgumentMatchesName: true;
-      includeInlayPropertyDeclarationTypeHints: true;
-      includeInlayVariableTypeHints: true;
-      includeInlayVariableTypeHintsWhenTypeMatchesName: true;
-    },
-    javascript = {
-      inlayHints = {
-        includeInlayEnumMemberValueHints: true;
-        includeInlayFunctionLikeReturnTypeHints: true;
-        includeInlayFunctionParameterTypeHints: true;
-        includeInlayParameterNameHints: 'all',
-        includeInlayParameterNameHintsWhenArgumentMatchesName: true;
-        includeInlayPropertyDeclarationTypeHints: true;
-        includeInlayVariableTypeHints: true;
-        includeInlayVariableTypeHintsWhenTypeMatchesName: true;
+-- typescript inlay hint 적용
+["tsserver"] = function()
+  require("typescript").setup({
+    disable_commands = false,
+    debug = false,
+    server = {
+      on_attach = f.on_attach,
+      capabilities = capabilities,
+      handlers = f.tsserver_handlers,
+      filetypes = { "javascript", "typescript", "typescriptreact", "typescript.tsx" },
+      cmd = { "typescript-language-server", "--stdio" },
+      settings = {
+        typescript = {
+          inlayHints = {
+            includeInlayParameterNameHints = "all",
+            includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+            includeInlayFunctionParameterTypeHints = true,
+            includeInlayVariableTypeHints = false,
+            includeInlayPropertyDeclarationTypeHints = true,
+            includeInlayFunctionLikeReturnTypeHints = false,
+            includeInlayEnumMemberValueHints = true,
+          },
+          suggest = {
+            includeCompletionsForModuleExports = true,
+          },
+        },
+        javascript = {
+          inlayHints = {
+            includeInlayParameterNameHints = "all",
+            includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+            includeInlayFunctionParameterTypeHints = true,
+            includeInlayVariableTypeHints = false,
+            includeInlayPropertyDeclarationTypeHints = true,
+            includeInlayFunctionLikeReturnTypeHints = false,
+            includeInlayEnumMemberValueHints = true,
+          },
+          suggest = {
+            includeCompletionsForModuleExports = true,
+          },
+        },
       },
-    }
-  }
-}
+    },
+  })
+end,
 ```
 
 ## fold
