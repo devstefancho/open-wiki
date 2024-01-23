@@ -1,9 +1,15 @@
 ---
+published: false
 id: atomic-habits
 slug: atomic-habits
+tags: book
+title: Atomic Habits
+description: Atomic Habits
+categories: book
 createdDate: 2023-11-06
-updatedDate: 2023-12-25
+updatedDate: 2024-01-23
 ---
+
 
 # Atomic Habits
 (chapter 15까지 읽음)

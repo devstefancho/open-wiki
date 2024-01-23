@@ -1,8 +1,13 @@
 ---
+published: false
 id: vim-basic
 slug: vim-basic
+title: Vim Basic
+description: vim basic
+tags: ["nvim"]
+categories: ["nvim"]
 createdDate: 2023-09-02
-updatedDate: 2023-12-31
+updatedDate: 2024-01-23
 ---
 
 # Vim

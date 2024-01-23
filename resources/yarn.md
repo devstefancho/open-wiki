@@ -1,8 +1,13 @@
 ---
+published: false
 id: yarn
 slug: yarn
+title: Yarn
+description: yarn
+tags: ["resources"]
+categories: ["resources"]
 createdDate: 2024-01-07
-updatedDate: 2024-01-07
+updatedDate: 2024-01-23
 ---
 
 # Yarn

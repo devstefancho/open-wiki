@@ -1,8 +1,13 @@
 ---
-id: nvim-luasnip
-slug: nvim-luasnip
+published: false
+id: luasnip
+slug: luasnip
+title: Luasnip
+description: luasnip
+tags: ["nvim"]
+categories: ["nvim"]
 createdDate: 2023-10-22
-updatedDate: 2023-12-30
+updatedDate: 2024-01-23
 ---
 
 # Luasnip

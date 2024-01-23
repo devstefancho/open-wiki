@@ -1,8 +1,13 @@
 ---
+published: false
 id: nvim-dap
 slug: nvim-dap
+title: Nvim Dap
+description: nvim dap
+tags: ["nvim"]
+categories: ["nvim"]
 createdDate: 2023-09-02
-updatedDate: 2023-12-29
+updatedDate: 2024-01-23
 ---
 
 ## Install

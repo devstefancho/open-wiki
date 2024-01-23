@@ -1,8 +1,13 @@
 ---
+published: false
 id: lazygit
 slug: lazygit
+title: Lazygit
+description: lazygit
+tags: ["resources"]
+categories: ["resources"]
 createdDate: 2024-01-07
-updatedDate: 2024-01-07
+updatedDate: 2024-01-23
 ---
 
 # Lazygit

@@ -1,10 +1,15 @@
 ---
+published: false
 id: nextjs-image
 slug: nextjs-image
-tags: nextjs-image
+title: Nextjs Image
+description: nextjs image
+tags: ["nextjs"]
+categories: ["nextjs"]
 createdDate: 2024-01-07
-updatedDate: 2024-01-10
+updatedDate: 2024-01-23
 ---
+
 
 # Next.js Image
 

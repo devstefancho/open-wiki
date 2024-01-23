@@ -1,9 +1,13 @@
 ---
+published: false
 id: javascript-sicp
 slug: javascript-sicp
-tags: javascript-sicp
+title: Javascript Sicp
+description: javascript sicp
+tags: book
+categories: book
 createdDate: 2024-01-07
-updatedDate: 2024-01-08
+updatedDate: 2024-01-23
 ---
 
 # JavaScript SICP
