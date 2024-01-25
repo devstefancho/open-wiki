@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 id: nextjs-image
 slug: nextjs-image
 title: Nextjs Image
@@ -7,36 +7,37 @@ description: nextjs image
 tags: ["nextjs"]
 categories: ["nextjs"]
 createdDate: 2024-01-07
-updatedDate: 2024-01-23
+updatedDate: 2024-01-26
 ---
 
 
 # Next.js Image
 
-## Version History
-v14.0.0
-- onLoadingComplete prop and domains config deprecated.
+## Version History 요약
 
-v13.4.14
-- placeholder prop support for data:/image...
+- v14.0.0
+  - onLoadingComplete prop and domains config deprecated.
 
-v13.2.0
-- contentDispositionType configuration added.
+- v13.4.14
+  - placeholder prop support for data:/image...
 
-v13.0.6
-- ref prop added.
+- v13.2.0
+  - contentDispositionType configuration added.
 
-v13.0.0
-- `<span>` wrapper removed.
-- layout, objectFit, objectPosition, lazyBoundary, lazyRoot props removed.
-- alt is required.
-- onLoadingComplete receives reference to img element.
-- Built-in loader config removed.
+- v13.0.6
+  - ref prop added.
 
-v12.3.0
-- remotePatterns and unoptimized configuration is stable.
+- v13.0.0
+  - `<span>` wrapper removed.
+  - layout, objectFit, objectPosition, lazyBoundary, lazyRoot props removed.
+  - alt is required.
+  - onLoadingComplete receives reference to img element.
+  - Built-in loader config removed.
 
-## Props
+- v12.3.0
+  - remotePatterns and unoptimized configuration is stable.
+
+## Image Props
 
 src
 - 외부 URL 사용시에는 반드시 next.config.js 에서 remotePatterns
@@ -66,6 +67,7 @@ size
 - 어떤 사이즈를 다운받아야할지 모르기때문에 viewport와 같거나 큰 사이즈로 선택함
 - 브라우저에게 full screen보다 작아야한다고 말해줄 수 있다.
 - size를 지정하지 않고 fill을 사용하면 기본적으로 100vw가 들어감
+
 ```js
 // 33vw로 지정하지 않으면
 // 유저는 3배 더 넓은 이미지를 받게 되고, 결과적으로 9배용량의 이미지를 받게됨 (3 x 3 = 9)
@@ -133,7 +135,7 @@ srcSet
 decoding
 - 항상 async임
 
-## Configuration Options
+## Config 에서 설정할 수 있는 것
 next.config.js에서 설정하는 것
 
 remotePatterns
@@ -225,8 +227,9 @@ theme에 따라 Image를 보여주기 위해서는 2개의 Image를 사용하면
 
 ## 테스트해보기
 
-- https://github.com/vercel/next.js/tree/canary/examples/image-component
-- `.next/cache/images` 에서 이미지 확인 (삭제하면 캐시도 날라감, 단 브라우저 캐시제거는 하드리로드 필요)
+> 아래는 nextjs [예시][1] 프로젝트에서 각 페이지별로 테스트해볼 수 있는 내용들이다
+
+`.next/cache/images` 에서 이미지 확인 (삭제하면 캐시도 날라감, 단 브라우저 캐시제거는 하드리로드 필요)
 
 `/fill`
 - Cache-Control에서 immutable 값 확인
@@ -237,7 +240,7 @@ theme에 따라 Image를 보여주기 위해서는 2개의 Image를 사용하면
 - object-fit을 contain으로 설정하면, 이미지가 stretch됨 (aspect ratio 유지)
 
 `/color`
-- blurDataURL에 base64 값을 직접 넣음
+- blurDataURL에 base64 값을 직접 넣어볼 수 있음
 
 `/placeholder`
 - static import인 경우 blurDataURL이 자동으로 적용됨 -> svg 로 생성됨
@@ -307,3 +310,5 @@ theme에 따라 Image를 보여주기 위해서는 2개의 Image를 사용하면
   deviceSizes: [640, 1024, 1440],
   imageSizes: [30, 50, 100],
   ```
+
+[1]: https://github.com/vercel/next.js/tree/canary/examples/image-component
