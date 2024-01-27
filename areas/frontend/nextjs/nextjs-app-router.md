@@ -7,7 +7,7 @@ description: nextjs app router
 tags: ["nextjs"]
 categories: ["nextjs"]
 createdDate: 2024-01-16
-updatedDate: 2024-01-26
+updatedDate: 2024-01-27
 ---
 
 # Next.js App Router 방식에 관하여
@@ -19,6 +19,10 @@ updatedDate: 2024-01-26
 
 ## serverless function의 cache
 - 캐시 처리를 따로 해주지 않으면, serverless 함수결과값이 캐싱이 되기 때문에, 아래와 같이 처리필요
+- Purge Cache ([Vercel](https://vercel.com/docs/infrastructure/data-cache/manage-data-cache#disabling-vercel-data-cache) 에서 Cache 제거 방법)
+  - serverless function은 cache가 될 수 있는데, 이 경우 api 호출하더라도 이미 cache된 function 결과를 가져오기 때문에 api 적용 결과와 다를 수 있음
+  - Project > Settings > Data Cache > Purge Everything 버튼을 클릭해서 cache를 지워주면 됨
+
 
 ```tsx
 /** Disable Vercel Data Cache */
