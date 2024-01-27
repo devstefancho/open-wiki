@@ -3,7 +3,8 @@ published: false
 id: bun
 slug: bun
 title: Bun
-description: bun
+summary: bun
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-22

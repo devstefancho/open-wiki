@@ -3,7 +3,8 @@ published: false
 id: rg
 slug: rg
 title: Rg
-description: rg
+summary: rg
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-10-16

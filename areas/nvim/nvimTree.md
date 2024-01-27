@@ -3,7 +3,8 @@ published: false
 id: nvimTree
 slug: nvimTree
 title: NvimTree
-description: nvimTree
+summary: nvimTree
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

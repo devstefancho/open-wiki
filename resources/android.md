@@ -3,7 +3,8 @@ published: false
 id: android
 slug: android
 title: Android
-description: android
+summary: android
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

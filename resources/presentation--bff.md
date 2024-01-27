@@ -3,7 +3,8 @@ published: false
 id: presentation--bff
 slug: presentation--bff
 title: Presentation  Bff
-description: presentation  bff
+summary: presentation  bff
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

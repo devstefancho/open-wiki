@@ -3,7 +3,8 @@ published: false
 id: tokyonight
 slug: tokyonight
 title: Tokyonight
-description: tokyonight
+summary: tokyonight
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

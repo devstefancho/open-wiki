@@ -3,7 +3,8 @@ published: false
 id: useEffect
 slug: useEffect
 title: UseEffect
-description: useEffect
+summary: useEffect
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

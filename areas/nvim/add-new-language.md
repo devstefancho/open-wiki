@@ -3,7 +3,8 @@ published: false
 id: add-new-language
 slug: add-new-language
 title: Add New Language
-description: add new language
+summary: add new language
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-09-29

@@ -3,7 +3,8 @@ published: false
 id: vite
 slug: vite
 title: Vite
-description: vite
+summary: vite
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2023-08-03

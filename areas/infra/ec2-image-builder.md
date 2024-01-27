@@ -3,7 +3,8 @@ published: false
 id: ec2-image-builder
 slug: ec2-image-builder
 title: Ec2 Image Builder
-description: ec2 image builder
+summary: ec2 image builder
+toc: true
 tags: ["infra"]
 categories: ["infra"]
 createdDate: 2024-01-23

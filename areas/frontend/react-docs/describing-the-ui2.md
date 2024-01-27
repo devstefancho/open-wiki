@@ -3,7 +3,8 @@ published: false
 id: describing-the-ui2
 slug: describing-the-ui2
 title: Describing The Ui2
-description: describing the ui2
+summary: describing the ui2
+toc: true
 tags: ["react-docs"]
 categories: ["react-docs"]
 createdDate: 2024-01-23

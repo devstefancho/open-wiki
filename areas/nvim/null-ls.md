@@ -3,7 +3,8 @@ published: false
 id: null-ls
 slug: null-ls
 title: Null Ls
-description: null ls
+summary: null ls
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: neovim-from-scratch
 slug: neovim-from-scratch
 title: Neovim From Scratch
-description: neovim from scratch
+summary: neovim from scratch
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2022-12-30

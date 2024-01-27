@@ -3,7 +3,8 @@ published: false
 id: Memory
 slug: Memory
 title: MEmory
-description: Memory
+summary: Memory
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

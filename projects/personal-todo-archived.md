@@ -3,7 +3,8 @@ published: false
 id: personal-todo-archived
 slug: personal-todo-archived
 title: Personal Todo Archived
-description: personal todo archived
+summary: personal todo archived
+toc: true
 tags: ["projects"]
 categories: ["projects"]
 createdDate: 2024-01-27

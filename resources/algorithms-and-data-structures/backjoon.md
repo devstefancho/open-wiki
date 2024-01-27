@@ -3,7 +3,8 @@ published: false
 id: backjoon
 slug: backjoon
 title: Backjoon
-description: backjoon
+summary: backjoon
+toc: true
 tags: ["algorithms-and-data-structures"]
 categories: ["algorithms-and-data-structures"]
 createdDate: 2024-01-23

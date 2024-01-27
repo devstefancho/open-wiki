@@ -3,7 +3,8 @@ published: false
 id: fugitive
 slug: fugitive
 title: Fugitive
-description: fugitive
+summary: fugitive
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-06

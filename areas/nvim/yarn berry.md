@@ -3,7 +3,8 @@ published: false
 id: yarn berry
 slug: yarn berry
 title: Yarn Berry
-description: yarn berry
+summary: yarn berry
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

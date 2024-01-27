@@ -3,7 +3,8 @@ published: false
 id: automator
 slug: automator
 title: Automator
-description: automator
+summary: automator
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

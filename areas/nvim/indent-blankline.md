@@ -3,7 +3,8 @@ published: false
 id: indent-blankline
 slug: indent-blankline
 title: Indent Blankline
-description: indent blankline
+summary: indent blankline
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-21

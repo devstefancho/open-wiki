@@ -3,7 +3,8 @@ published: false
 id: symlink
 slug: symlink
 title: Symlink
-description: symlink
+summary: symlink
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

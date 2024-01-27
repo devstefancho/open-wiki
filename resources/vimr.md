@@ -3,7 +3,8 @@ published: false
 id: vimr
 slug: vimr
 title: Vimr
-description: vimr
+summary: vimr
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-30

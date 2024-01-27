@@ -4,7 +4,8 @@ id: atomic-habits
 slug: atomic-habits
 tags: book
 title: Atomic Habits
-description: Atomic Habits
+summary: Atomic Habits
+toc: true
 categories: book
 createdDate: 2023-11-06
 updatedDate: 2024-01-23

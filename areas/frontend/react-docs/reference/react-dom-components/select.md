@@ -3,7 +3,8 @@ published: false
 id: select
 slug: select
 title: Select
-description: select
+summary: select
+toc: true
 tags: ["react-dom-components"]
 categories: ["react-dom-components"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: turborepo
 slug: turborepo
 title: Turborepo
-description: turborepo
+summary: turborepo
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2023-08-15

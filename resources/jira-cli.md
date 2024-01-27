@@ -3,7 +3,8 @@ published: false
 id: jira-cli
 slug: jira-cli
 title: Jira Cli
-description: jira cli
+summary: jira cli
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: git
 slug: git
 title: Git
-description: git
+summary: git
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

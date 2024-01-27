@@ -3,7 +3,8 @@ published: false
 id: adding-interactivity
 slug: adding-interactivity
 title: Adding Interactivity
-description: adding interactivity
+summary: adding interactivity
+toc: true
 tags: ["react-docs"]
 categories: ["react-docs"]
 createdDate: 2024-01-23

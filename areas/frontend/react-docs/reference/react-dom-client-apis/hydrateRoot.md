@@ -3,7 +3,8 @@ published: false
 id: hydrateRoot
 slug: hydrateRoot
 title: HydrateRoot
-description: hydrateRoot
+summary: hydrateRoot
+toc: true
 tags: ["react-dom-client-apis"]
 categories: ["react-dom-client-apis"]
 createdDate: 2024-01-23

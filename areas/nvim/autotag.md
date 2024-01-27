@@ -3,7 +3,8 @@ published: false
 id: autotag
 slug: autotag
 title: Autotag
-description: autotag
+summary: autotag
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-23

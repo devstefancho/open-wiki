@@ -3,7 +3,8 @@ published: false
 id: yarn
 slug: yarn
 title: Yarn
-description: yarn
+summary: yarn
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-07

@@ -3,7 +3,8 @@ published: false
 id: Suspense
 slug: Suspense
 title: SUspense
-description: Suspense
+summary: Suspense
+toc: true
 tags: ["components"]
 categories: ["components"]
 createdDate: 2024-01-23

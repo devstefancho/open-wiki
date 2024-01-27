@@ -3,7 +3,8 @@ published: false
 id: lua
 slug: lua
 title: Lua
-description: lua
+summary: lua
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: mdx
 slug: mdx
 title: Mdx
-description: mdx
+summary: mdx
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-07

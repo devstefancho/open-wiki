@@ -3,7 +3,8 @@ published: false
 id: algorithm
 slug: algorithm
 title: Algorithm
-description: algorithm
+summary: algorithm
+toc: true
 tags: ["algorithms-and-data-structures"]
 categories: ["algorithms-and-data-structures"]
 createdDate: 2024-01-23

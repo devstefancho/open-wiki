@@ -3,7 +3,8 @@ published: false
 id: brew
 slug: brew
 title: Brew
-description: brew
+summary: brew
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: true
 id: nextjs-app-router
 slug: nextjs-app-router
 title: Nextjs App Router
-description: nextjs app router
+summary: nextjs app router
+toc: true
 tags: ["nextjs"]
 categories: ["nextjs"]
 createdDate: 2024-01-16

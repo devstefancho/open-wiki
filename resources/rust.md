@@ -3,7 +3,8 @@ published: false
 id: rust
 slug: rust
 title: Rust
-description: rust
+summary: rust
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-09-13

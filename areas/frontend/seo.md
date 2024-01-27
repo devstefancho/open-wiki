@@ -3,7 +3,8 @@ published: false
 id: seo
 slug: seo
 title: Seo
-description: seo
+summary: seo
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2023-08-03

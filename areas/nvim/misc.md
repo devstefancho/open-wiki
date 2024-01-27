@@ -3,7 +3,8 @@ published: false
 id: misc
 slug: misc
 title: Misc
-description: misc
+summary: misc
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

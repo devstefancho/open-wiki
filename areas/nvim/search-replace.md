@@ -3,7 +3,8 @@ published: false
 id: search-replace
 slug: search-replace
 title: Search Replace
-description: search replace
+summary: search replace
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

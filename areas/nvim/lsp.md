@@ -3,7 +3,8 @@ published: false
 id: lsp
 slug: lsp
 title: Lsp
-description: lsp
+summary: lsp
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

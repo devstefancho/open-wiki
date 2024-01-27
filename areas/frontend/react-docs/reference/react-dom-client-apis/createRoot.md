@@ -3,7 +3,8 @@ published: false
 id: createRoot
 slug: createRoot
 title: CreateRoot
-description: createRoot
+summary: createRoot
+toc: true
 tags: ["react-dom-client-apis"]
 categories: ["react-dom-client-apis"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: tmux
 slug: tmux
 title: Tmux
-description: tmux
+summary: tmux
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-17

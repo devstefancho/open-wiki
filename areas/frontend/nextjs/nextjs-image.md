@@ -3,7 +3,8 @@ published: true
 id: nextjs-image
 slug: nextjs-image
 title: Nextjs Image
-description: nextjs image
+summary: nextjs image
+toc: true
 tags: ["nextjs"]
 categories: ["nextjs"]
 createdDate: 2024-01-07

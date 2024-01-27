@@ -3,7 +3,8 @@ published: false
 id: winbar
 slug: winbar
 title: Winbar
-description: winbar
+summary: winbar
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-14

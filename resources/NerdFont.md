@@ -3,7 +3,8 @@ published: false
 id: NerdFont
 slug: NerdFont
 title: NErdFont
-description: NerdFont
+summary: NerdFont
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-10

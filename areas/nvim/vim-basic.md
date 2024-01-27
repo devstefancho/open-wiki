@@ -3,7 +3,8 @@ published: false
 id: vim-basic
 slug: vim-basic
 title: Vim Basic
-description: vim basic
+summary: vim basic
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-09-02

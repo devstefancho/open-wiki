@@ -3,7 +3,8 @@ published: false
 id: vim-illuminate
 slug: vim-illuminate
 title: Vim Illuminate
-description: vim illuminate
+summary: vim illuminate
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

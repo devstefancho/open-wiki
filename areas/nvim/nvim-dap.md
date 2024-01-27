@@ -3,7 +3,8 @@ published: false
 id: nvim-dap
 slug: nvim-dap
 title: Nvim Dap
-description: nvim dap
+summary: nvim dap
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-09-02

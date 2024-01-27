@@ -3,7 +3,8 @@ published: false
 id: iTerm2
 slug: iTerm2
 title: ITerm2
-description: iTerm2
+summary: iTerm2
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

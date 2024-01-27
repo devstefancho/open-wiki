@@ -3,7 +3,8 @@ published: false
 id: describing-the-ui
 slug: describing-the-ui
 title: Describing The Ui
-description: React 컴포넌트 이해하기
+summary: React 컴포넌트 이해하기
+toc: true
 tags: ["react-docs"]
 categories: ["react-docs"]
 createdDate: 2024-01-23

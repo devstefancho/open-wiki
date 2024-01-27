@@ -3,7 +3,8 @@ published: false
 id: styled-component
 slug: styled-component
 title: Styled Component
-description: styled component
+summary: styled component
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2023-08-03

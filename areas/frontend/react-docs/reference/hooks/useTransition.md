@@ -3,7 +3,8 @@ published: false
 id: useTransition
 slug: useTransition
 title: UseTransition
-description: useTransition
+summary: useTransition
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

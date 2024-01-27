@@ -3,7 +3,8 @@ published: false
 id: styled-components
 slug: styled-components
 title: Styled Components
-description: styled components
+summary: styled components
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

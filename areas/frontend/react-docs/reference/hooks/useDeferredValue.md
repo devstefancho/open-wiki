@@ -3,7 +3,8 @@ published: false
 id: useDeferredValue
 slug: useDeferredValue
 title: UseDeferredValue
-description: useDeferredValue
+summary: useDeferredValue
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

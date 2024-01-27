@@ -3,7 +3,8 @@ published: false
 id: Profiler
 slug: Profiler
 title: PRofiler
-description: Profiler
+summary: Profiler
+toc: true
 tags: ["components"]
 categories: ["components"]
 createdDate: 2024-01-23

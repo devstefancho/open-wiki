@@ -3,7 +3,8 @@ published: false
 id: common-troubles
 slug: common-troubles
 title: Common Troubles
-description: common troubles
+summary: common troubles
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

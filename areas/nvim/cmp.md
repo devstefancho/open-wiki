@@ -3,7 +3,8 @@ published: false
 id: cmp
 slug: cmp
 title: Cmp
-description: cmp
+summary: cmp
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-22

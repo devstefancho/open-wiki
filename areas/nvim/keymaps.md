@@ -3,7 +3,8 @@ published: false
 id: keymaps
 slug: keymaps
 title: Keymaps
-description: keymaps
+summary: keymaps
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

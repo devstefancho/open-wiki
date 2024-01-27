@@ -3,7 +3,8 @@ published: false
 id: github-action
 slug: github-action
 title: Github Action
-description: github action
+summary: github action
+toc: true
 tags: ["infra"]
 categories: ["infra"]
 createdDate: 2024-01-07

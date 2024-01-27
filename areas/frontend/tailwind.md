@@ -3,7 +3,8 @@ published: false
 id: tailwind
 slug: tailwind
 title: Tailwind
-description: tailwind
+summary: tailwind
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2023-08-03

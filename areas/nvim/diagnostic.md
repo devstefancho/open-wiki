@@ -3,7 +3,8 @@ published: false
 id: diagnostic
 slug: diagnostic
 title: Diagnostic
-description: diagnostic
+summary: diagnostic
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

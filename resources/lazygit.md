@@ -3,7 +3,8 @@ published: false
 id: lazygit
 slug: lazygit
 title: Lazygit
-description: lazygit
+summary: lazygit
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-07

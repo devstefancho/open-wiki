@@ -3,7 +3,8 @@ published: false
 id: retrospect-2024
 slug: retrospect-2024
 title: Retrospect 2024
-description: retrospect 2024
+summary: retrospect 2024
+toc: true
 tags: ["retrospect"]
 categories: ["retrospect"]
 createdDate: 2024-01-01

@@ -3,7 +3,8 @@ published: false
 id: iVim
 slug: iVim
 title: IVim
-description: iVim
+summary: iVim
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

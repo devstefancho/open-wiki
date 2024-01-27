@@ -3,7 +3,8 @@ published: false
 id: textarea
 slug: textarea
 title: Textarea
-description: textarea
+summary: textarea
+toc: true
 tags: ["react-dom-components"]
 categories: ["react-dom-components"]
 createdDate: 2024-01-23

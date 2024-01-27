@@ -3,7 +3,8 @@ published: false
 id: vim-color
 slug: vim-color
 title: Vim Color
-description: vim color
+summary: vim color
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: javascript-sicp
 slug: javascript-sicp
 title: Javascript Sicp
-description: javascript sicp
+summary: javascript sicp
+toc: true
 tags: book
 categories: book
 createdDate: 2024-01-07

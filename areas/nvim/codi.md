@@ -3,7 +3,8 @@ published: false
 id: codi
 slug: codi
 title: Codi
-description: codi
+summary: codi
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: asdf
 slug: asdf
 title: Asdf
-description: asdf
+summary: asdf
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-16

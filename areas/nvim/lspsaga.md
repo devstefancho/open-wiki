@@ -3,7 +3,8 @@ published: false
 id: lspsaga
 slug: lspsaga
 title: Lspsaga
-description: lspsaga
+summary: lspsaga
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-16

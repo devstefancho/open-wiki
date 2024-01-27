@@ -3,7 +3,8 @@ published: false
 id: Fragment
 slug: Fragment
 title: FRagment
-description: Fragment
+summary: Fragment
+toc: true
 tags: ["components"]
 categories: ["components"]
 createdDate: 2024-01-23

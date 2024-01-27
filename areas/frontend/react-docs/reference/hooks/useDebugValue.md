@@ -3,7 +3,8 @@ published: false
 id: useDebugValue
 slug: useDebugValue
 title: UseDebugValue
-description: useDebugValue
+summary: useDebugValue
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

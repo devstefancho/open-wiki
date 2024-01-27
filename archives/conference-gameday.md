@@ -3,7 +3,8 @@ published: false
 id: conference-gameday
 slug: conference-gameday
 title: Conference Gameday
-description: conference gameday
+summary: conference gameday
+toc: true
 tags: ["archives"]
 categories: ["archives"]
 createdDate: 2024-01-23

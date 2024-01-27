@@ -3,7 +3,8 @@ published: false
 id: managing-state
 slug: managing-state
 title: Managing State
-description: managing state
+summary: managing state
+toc: true
 tags: ["react-docs"]
 categories: ["react-docs"]
 createdDate: 2024-01-23

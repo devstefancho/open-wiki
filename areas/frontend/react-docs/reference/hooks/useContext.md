@@ -3,7 +3,8 @@ published: false
 id: useContext
 slug: useContext
 title: UseContext
-description: useContext
+summary: useContext
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

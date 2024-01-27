@@ -3,7 +3,8 @@ published: false
 id: vimwiki
 slug: vimwiki
 title: Vimwiki
-description: vimwiki
+summary: vimwiki
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

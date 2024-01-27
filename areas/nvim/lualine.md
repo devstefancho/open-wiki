@@ -3,7 +3,8 @@ published: false
 id: lualine
 slug: lualine
 title: Lualine
-description: lualine
+summary: lualine
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-17

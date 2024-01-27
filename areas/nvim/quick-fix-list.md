@@ -3,7 +3,8 @@ published: false
 id: quick-fix-list
 slug: quick-fix-list
 title: Quick Fix List
-description: quick fix list
+summary: quick fix list
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

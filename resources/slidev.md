@@ -3,7 +3,8 @@ published: false
 id: slidev
 slug: slidev
 title: Slidev
-description: slidev
+summary: slidev
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

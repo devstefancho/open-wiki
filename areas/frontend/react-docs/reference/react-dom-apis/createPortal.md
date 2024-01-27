@@ -3,7 +3,8 @@ published: false
 id: createPortal
 slug: createPortal
 title: CreatePortal
-description: createPortal
+summary: createPortal
+toc: true
 tags: ["react-dom-apis"]
 categories: ["react-dom-apis"]
 createdDate: 2024-01-23

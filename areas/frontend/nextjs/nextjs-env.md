@@ -3,7 +3,8 @@ published: true
 id: nextjs-env
 slug: nextjs-env
 title: Nextjs env
-description: nextjs-env
+summary: nextjs-env
+toc: true
 tags: ["nextjs-env"]
 categories: ["nextjs"]
 createdDate: 2023-09-04

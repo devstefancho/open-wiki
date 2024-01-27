@@ -3,7 +3,8 @@ published: false
 id: alacritty
 slug: alacritty
 title: Alacritty
-description: alacritty
+summary: alacritty
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

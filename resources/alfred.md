@@ -3,7 +3,8 @@ published: false
 id: alfred
 slug: alfred
 title: Alfred
-description: alfred
+summary: alfred
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-17

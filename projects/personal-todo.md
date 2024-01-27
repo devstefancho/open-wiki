@@ -3,7 +3,8 @@ published: false
 id: personal-todo
 slug: personal-todo
 title: Personal Todo
-description: personal todo
+summary: personal todo
+toc: true
 tags: ["projects"]
 categories: ["projects"]
 createdDate: 2023-09-25

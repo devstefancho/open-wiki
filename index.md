@@ -3,7 +3,8 @@ published: false
 id: index
 slug: index
 title: Index
-description: index
+summary: index
+toc: true
 tags: ["open-wiki"]
 categories: ["open-wiki"]
 createdDate: 2023-11-06

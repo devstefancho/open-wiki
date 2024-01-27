@@ -3,7 +3,8 @@ published: false
 id: retrospect-2023
 slug: retrospect-2023
 title: Retrospect 2023
-description: retrospect 2023
+summary: retrospect 2023
+toc: true
 tags: ["retrospect"]
 categories: ["retrospect"]
 createdDate: 2023-12-31

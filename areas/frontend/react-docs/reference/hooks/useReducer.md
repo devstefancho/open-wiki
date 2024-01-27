@@ -3,7 +3,8 @@ published: false
 id: useReducer
 slug: useReducer
 title: UseReducer
-description: useReducer
+summary: useReducer
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

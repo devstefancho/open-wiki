@@ -3,7 +3,8 @@ published: false
 id: commands
 slug: commands
 title: Commands
-description: commands
+summary: commands
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

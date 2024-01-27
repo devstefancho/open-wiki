@@ -3,7 +3,8 @@ published: false
 id: colorscheme
 slug: colorscheme
 title: Colorscheme
-description: colorscheme
+summary: colorscheme
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-09-28

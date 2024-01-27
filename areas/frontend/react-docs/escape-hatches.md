@@ -3,7 +3,8 @@ published: false
 id: escape-hatches
 slug: escape-hatches
 title: Escape Hatches
-description: escape hatches
+summary: escape hatches
+toc: true
 tags: ["react-docs"]
 categories: ["react-docs"]
 createdDate: 2024-01-23

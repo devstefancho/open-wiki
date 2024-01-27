@@ -3,7 +3,8 @@ published: false
 id: useMemo
 slug: useMemo
 title: UseMemo
-description: useMemo
+summary: useMemo
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

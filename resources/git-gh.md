@@ -3,7 +3,8 @@ published: false
 id: git-gh
 slug: git-gh
 title: Git Gh
-description: git gh
+summary: git gh
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-03

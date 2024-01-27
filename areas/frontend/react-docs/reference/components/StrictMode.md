@@ -3,7 +3,8 @@ published: false
 id: StrictMode
 slug: StrictMode
 title: STrictMode
-description: StrictMode
+summary: StrictMode
+toc: true
 tags: ["components"]
 categories: ["components"]
 createdDate: 2024-01-23

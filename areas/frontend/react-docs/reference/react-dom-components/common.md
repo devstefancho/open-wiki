@@ -3,7 +3,8 @@ published: false
 id: common
 slug: common
 title: Common
-description: common
+summary: common
+toc: true
 tags: ["react-dom-components"]
 categories: ["react-dom-components"]
 createdDate: 2024-01-23

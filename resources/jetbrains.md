@@ -3,7 +3,8 @@ published: false
 id: jetbrains
 slug: jetbrains
 title: Jetbrains
-description: jetbrains
+summary: jetbrains
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-25

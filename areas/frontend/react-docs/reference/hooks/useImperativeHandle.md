@@ -3,7 +3,8 @@ published: false
 id: useImperativeHandle
 slug: useImperativeHandle
 title: UseImperativeHandle
-description: useImperativeHandle
+summary: useImperativeHandle
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

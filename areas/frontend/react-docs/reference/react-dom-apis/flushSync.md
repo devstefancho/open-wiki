@@ -3,7 +3,8 @@ published: false
 id: flushSync
 slug: flushSync
 title: FlushSync
-description: flushSync
+summary: flushSync
+toc: true
 tags: ["react-dom-apis"]
 categories: ["react-dom-apis"]
 createdDate: 2024-01-23

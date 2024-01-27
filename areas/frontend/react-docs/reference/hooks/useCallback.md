@@ -3,7 +3,8 @@ published: false
 id: useCallback
 slug: useCallback
 title: UseCallback
-description: useCallback
+summary: useCallback
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

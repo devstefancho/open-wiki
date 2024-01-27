@@ -3,7 +3,8 @@ published: false
 id: treesitter
 slug: treesitter
 title: Treesitter
-description: treesitter
+summary: treesitter
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

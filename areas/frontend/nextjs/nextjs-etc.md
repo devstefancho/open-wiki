@@ -3,7 +3,8 @@ published: false
 id: nextjs-etc
 slug: nextjs-etc
 title: Nextjs Etc
-description: nextjs etc
+summary: nextjs etc
+toc: true
 tags: ["nextjs"]
 categories: ["nextjs"]
 createdDate: 2024-01-25

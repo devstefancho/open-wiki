@@ -3,7 +3,8 @@ published: false
 id: input
 slug: input
 title: Input
-description: input
+summary: input
+toc: true
 tags: ["react-dom-components"]
 categories: ["react-dom-components"]
 createdDate: 2024-01-23

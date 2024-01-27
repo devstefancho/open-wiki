@@ -3,7 +3,8 @@ published: false
 id: useState
 slug: useState
 title: UseState
-description: useState
+summary: useState
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

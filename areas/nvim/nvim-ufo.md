@@ -3,7 +3,8 @@ published: false
 id: nvim-ufo
 slug: nvim-ufo
 title: Nvim Ufo
-description: nvim ufo
+summary: nvim ufo
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-12-03

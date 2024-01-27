@@ -3,7 +3,8 @@ published: false
 id: luasnip
 slug: luasnip
 title: Luasnip
-description: luasnip
+summary: luasnip
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-22

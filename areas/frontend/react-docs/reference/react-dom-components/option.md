@@ -3,7 +3,8 @@ published: false
 id: option
 slug: option
 title: Option
-description: option
+summary: option
+toc: true
 tags: ["react-dom-components"]
 categories: ["react-dom-components"]
 createdDate: 2024-01-23

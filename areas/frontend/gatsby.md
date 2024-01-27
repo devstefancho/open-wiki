@@ -3,7 +3,8 @@ published: false
 id: gatsby
 slug: gatsby
 title: Gatsby
-description: gatsby
+summary: gatsby
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2024-01-23

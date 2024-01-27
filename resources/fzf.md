@@ -3,7 +3,8 @@ published: false
 id: fzf
 slug: fzf
 title: Fzf
-description: fzf
+summary: fzf
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23

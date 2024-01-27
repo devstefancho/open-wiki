@@ -3,7 +3,8 @@ published: false
 id: lunarvim
 slug: lunarvim
 title: Lunarvim
-description: lunarvim
+summary: lunarvim
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

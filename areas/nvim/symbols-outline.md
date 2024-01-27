@@ -3,7 +3,8 @@ published: false
 id: symbols-outline
 slug: symbols-outline
 title: Symbols Outline
-description: symbols outline
+summary: symbols outline
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2023-10-15

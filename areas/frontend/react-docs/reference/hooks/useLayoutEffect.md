@@ -3,7 +3,8 @@ published: false
 id: useLayoutEffect
 slug: useLayoutEffect
 title: UseLayoutEffect
-description: useLayoutEffect
+summary: useLayoutEffect
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: presentation--Custom React Hooks and When to Use Them
 slug: presentation--Custom React Hooks and When to Use Them
 title: Presentation  CUstom REact HOoks And WHen To USe THem
-description: presentation  Custom React Hooks and When to Use Them
+summary: presentation  Custom React Hooks and When to Use Them
+toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2024-01-23

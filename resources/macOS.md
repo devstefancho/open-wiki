@@ -3,7 +3,8 @@ published: false
 id: macOS
 slug: macOS
 title: MacOS
-description: macOS
+summary: macOS
+toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-28

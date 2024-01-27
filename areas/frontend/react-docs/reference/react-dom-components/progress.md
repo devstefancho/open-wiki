@@ -3,7 +3,8 @@ published: false
 id: progress
 slug: progress
 title: Progress
-description: progress
+summary: progress
+toc: true
 tags: ["react-dom-components"]
 categories: ["react-dom-components"]
 createdDate: 2024-01-23

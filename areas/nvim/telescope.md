@@ -3,7 +3,8 @@ published: false
 id: telescope
 slug: telescope
 title: Telescope
-description: telescope
+summary: telescope
+toc: true
 tags: ["nvim"]
 categories: ["nvim"]
 createdDate: 2024-01-23

@@ -3,7 +3,8 @@ published: false
 id: useInsertionEffect
 slug: useInsertionEffect
 title: UseInsertionEffect
-description: useInsertionEffect
+summary: useInsertionEffect
+toc: true
 tags: ["hooks"]
 categories: ["hooks"]
 createdDate: 2024-01-23

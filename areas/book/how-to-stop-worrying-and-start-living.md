@@ -3,7 +3,8 @@ published: false
 id: how-to-stop-worrying-and-start-living
 slug: how-to-stop-worrying-and-start-living
 title: How To Stop Worrying And Start Living
-description: how to stop worrying and start living
+summary: how to stop worrying and start living
+toc: true
 tags: ["book"]
 categories: ["book"]
 createdDate: 2024-01-23
