@@ -5,8 +5,8 @@ slug: javascript-sicp
 title: Javascript Sicp
 summary: javascript sicp
 toc: true
-tags: book
-categories: book
+tags: ["book"]
+categories: ["book"]
 createdDate: 2024-01-07
 updatedDate: 2024-01-23
 ---

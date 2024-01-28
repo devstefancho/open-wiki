@@ -1,7 +1,12 @@
 ---
+published: false
 id: postgresql
 slug: postgresql
-tags: postgresql
+title: Postgresql
+summary: postgresql
+toc: true
+tags: ["backend"]
+categories: ["backend"]
 createdDate: 2024-01-19
 updatedDate: 2024-01-21
 ---

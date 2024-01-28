@@ -1,7 +1,12 @@
 ---
+published: false
 id: datadog
 slug: datadog
-tags: datadog
+title: Datadog
+summary: datadog
+toc: true
+tags: ["backend"]
+categories: ["backend"]
 createdDate: 2023-08-03
 updatedDate: 2024-01-22
 ---
