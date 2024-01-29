@@ -13,7 +13,17 @@ updatedDate: 2024-01-29
 
 # Git
 
-> Git과 관련된 명령어와 Github 인증방식 그리고 Slack 연동등에 대해서 정리해보았다.
+Git의 명령어는 자세하게 알수록 과거 이력을 추적하는데에 도움을 준다.
+
+추가적으로 Github 인증방식 그리고 Slack 연동등에 대해서 정리해보았다.
+GPG로는 사용자 서명을 남긴다. SSH는 Github에 접속하기 위함이다. (push, pull을 하기 위함)
+git-user는 사용자를 스위치하기 위함이다. git-user는 서명과 user.name, user.email은 변경해주지만
+SSH등록은 git-user와 별개로 처리해줘야한다.
+여러계정으로 push, pull을 하기 위해서는 SSH 등록도 계정개수만큼 해줘야한다.
+SSH로 등록된 계정은 각각의 remote 주소를 갖는다. `git@github.com:<owner>/<repo>.git`,
+`git@github-devstefancho.com:<owner>/<repo>.git` 이런식으로 해당 ssh 키에 맞는 remote 주소를
+등록해주어야한다.
+
 
 ## Git 기본명령어
 ### message
@@ -245,11 +255,14 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 1. ssh 생성 및 추가
   ```bash
-  ssh-keygen -t rsa -b 4096 -C "your-email@example.com" -f ~/.ssh/id_rsa_newaccount # 이미 id_rsa 이름이 있다면 다른 파일명으로 지정해줘야함
-  ssh-add ~/.ssh/id_rsa_newaccount # ssh 키 추가
+  # 이미 id_rsa 이름이 있다면 다른 파일명으로 지정해줘야함
+  ssh-keygen -t rsa -b 4096 -C "your-email@example.com" -f ~/.ssh/id_rsa_newaccount
+  ssh-add ~/.ssh/id_rsa_newaccount # ssh 키 추가 (newaccount는 본인에 맞게 바꾼다.)
   ```
 
-2. 새로 생성된 공개 키 (id_rsa_newaccount.pub)의 내용을 복사하여 GitHub 계정의 SSH 키 설정에 추가합니다.
+2. 새로 생성된 공개 키 (~/.ssh/id_rsa_newaccount.pub)의 내용을 복사하여 GitHub 계정의 SSH 키 설정에 추가한다.
+  - 이때 Github 계정은 1번에서 email 설정한 계정으로 접속하면 된다.
+  - Settings > SSH and GPG Keys에서 New SSH key로 등록해준다.
 3. ~/.ssh/config 수정
   ```
   # 기본 계정
@@ -264,11 +277,21 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
       User git
       IdentityFile ~/.ssh/id_rsa_newaccount
   ```
-4. clone test 해보기 
-  ```
+- Host의 github-newaccount는 별칭이다.
+- HostName은 실제 github 주소를 의미한다.
+- User git은 ssh연결에 사용되는 사용자명이다.
+- IdentityFile은 위에서 생성한 ssh 키의 경로이다.
+
+  
+5. push 해보기
+  ```bash
+  # 신규로 clone 받는 경우
   git clone git@github-newaccount:username/repository.git
+  
+  # 이미 clone은 받아져 있어서, origin 경로만 바꾸는 경우
+  git remote set-url origin git@github-newaccount:{Owner}/{Repository Name}.git
   ```
-5. ssh 연결 확인하기
+6. ssh 연결 확인하기
   ```bash
   # 매칭되는 이메일이 결과에 나와야한다.
   ssh -T git@github.com # 명령을 실행했을 때 "Hi {id_rsa에 등록된 email주소}! You've successfully 
