@@ -8,7 +8,7 @@ toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23
-updatedDate: 2024-01-29
+updatedDate: 2024-01-30
 ---
 
 # Git
@@ -136,21 +136,36 @@ git worktree add {경로} -b {새 브랜치 이름}
 GPG 인증은 commit이나 tag에 서명하여 해당 commit, tag가 특정개인에 의해 생성되었음을 증명해준다.
 github에서 commit옆에 초록색  태그가 있는 경우가 GPG 인증이 되었음을 의미하는 것이다.
 
-### 인증키 확인하기
+### 인증키가 이미 있는 경우 Github에 등록하기
 먼저 현재 등록되어 있는 key들에 대해서 확인해보자
 현재 등록된 키가 있다면 아래명령어의 결과값으로 GPG Key값을 확인할 수 있다.
 만약없다면 인증키를 생성하면 된다.
+나는 gh cli를 사용해서 등록하였다.
+등록을 마쳤으면 Settings > SSH and GPG keys에서 등록된 키를 확인할 수 있다.
 ```bash
-gpg --list-secret-keys --keyid-format=long
-```
-`{}`부분은 변수값을 의미한다.
-```
-sec   rsa4096/{GPG Key} {등록일} [{만료일}]
-      ABC1234ABC1234ABC1234ABC1234ABC1234ABC
-uid                 [ultimate] {이름} <{메일주소}>
+gpg --list-secret-keys --keyid-format=long # gpg key 확인하기
+gpg --armor --output mykey.asc --export {GPG Key} # GPG Key로 asc 파일 생성하기
+gh auth refresh -s write:gpg_key # gh-cli를 사용하여 gpg key 등록할수 있도록 권한설정
+gh gpg-key add mykey.asc # github에 gpg키 등록하기(https://cli.github.com/manual/gh_gpg-key_add)
 ```
 
-### 인증키 생성하기
+list-secret-keys로 출력되는 값은 아래와 같고 각 항목에 대해 간략히 설명해보았다.
+```
+sec   rsa4096/{GPG Key} {등록일 YYYY-MM-DD} [SC]
+      {Finger Print}
+uid                 [ultimate] {이름} <{메일주소}>
+ssb   rsa4096/{Sub Key} {등록일 YYYY-MM-DD} [E]
+```
+- `{}`부분은 변수값
+- sec는 secret key
+- rsa4096은 유형과 길이
+- SC는 사용목적을 나타내고 S는 Sign(서명), C는 Certify(암호화)를 의미
+- Finger Print는 키의 전체 해시 값
+- uid 는 user id를 의미하고, 키 소유자의 이름과 이메일 주소가 포함됨
+- ssb는 subkey를 나타내고, 특정목적에 사용되는 추가키임
+  - E는 Encryption으로 암호화를 의미하고, 이 subkey가 암호화에 사용될 수 있음을 나타냄
+
+### 인증키 신규생성하기
 
 ```bash
 gpg --full-generate-key # key 생성하기
