@@ -8,7 +8,7 @@ toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23
-updatedDate: 2024-01-30
+updatedDate: 2024-02-01
 ---
 
 # Git
@@ -332,4 +332,16 @@ ssh-add ~/.ssh/id_rsa_mydomain # 두번째 항목추가
 sudo npm i -g git-user-switch # 명령어 설치하기
 git-user # 유저 변경하기
 git-user -d # 유저 삭제하기
+```
+
+git-user로 계정을 변경후에 아래와 같은 gpg 에러가 발생할 수 있다.
+이 경우는 gpg 키가 빈값으로 들어간 듯 하다. 유저를 삭제하고 git-user에 다시 등록해주면 된다.
+```
+error: gpg failed to sign the data:
+gpg: skipped "": Invalid user ID
+[GNUPG:] INV_SGNR 0
+[GNUPG:] FAILURE sign 37
+gpg: signing failed: Invalid user ID
+
+fatal: failed to write commit object
 ```
