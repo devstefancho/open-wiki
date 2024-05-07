@@ -8,7 +8,7 @@ toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23
-updatedDate: 2024-01-23
+updatedDate: 2024-02-21
 ---
 
 # Jira Cli
@@ -31,14 +31,16 @@ export JIRA_API_TOKEN=<YOUR_API_TOKEN>
 
 ### 초기설정
 ```bash
-jira init
+jira init # default project를 변경하고 싶을때도 사용한다.
 ## 선택항목 ##
 # Installation Type: Cloud
-# Link to Jira server: https://kidsworld.atlassian.net/
-# Login email: devstefancho@i-nara.co.kr
+# Link to Jira server: https://mydomain.atlassian.net/
+# Login email: devstefancho@mydomain.co.kr
 # Default project: READINGTF
 # Default board: Scrum FMP
 ```
+
+init으로 설정된 내용들은 `~/.config/.jira/.config.yml`에서 확인하면 된다.
 
 ## 활용방법
 

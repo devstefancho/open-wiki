@@ -8,15 +8,15 @@ toc: true
 tags: ["nextjs-env"]
 categories: ["nextjs"]
 createdDate: 2023-09-04
-updatedDate: 2024-01-26
+updatedDate: 2024-02-05
 ---
 
 
 # Next.js 환경변수가 갖는 특징에 관하여
 
-## [process.env][1]
+## process.env
 - 환경변수를 포함한 객체를 반환한다
-- process.env는 객체(object)이기 때문에
+- [process.env][1]는 객체(object)이기 때문에
   - 직접 값을 넣어서 변경할 수 있다
   - 속성을 delete 할 수 있음
 

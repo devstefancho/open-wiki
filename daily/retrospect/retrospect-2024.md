@@ -8,7 +8,7 @@ toc: true
 tags: ["retrospect"]
 categories: ["retrospect"]
 createdDate: 2024-01-01
-updatedDate: 2024-01-23
+updatedDate: 2024-02-07
 ---
 
 # retrospect-2024
@@ -22,7 +22,8 @@ updatedDate: 2024-01-23
 ## 스터디
 
 ## 개인
+- Blog 작업중 (fe, be, db)
 
 ## 독서
-
+- 나는 네이버 프런트엔드 개발자입니다
 

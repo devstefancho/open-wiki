@@ -8,7 +8,7 @@ toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-23
-updatedDate: 2024-02-01
+updatedDate: 2024-02-21
 ---
 
 # Git
@@ -61,6 +61,7 @@ git show --name-only # filename only
 ```bash
 git reset --hard origin/main # ~/.config main ⇣2⇡1 이런식으로, local과 remote의 차이가 있는 경우 remote로 동기화하기
 git reset HEAD~1 # 바로 직전 commit을 리셋한다.
+git reset {commit-hash} # 해당 commit 까지는 유지하고, 이후 커밋들을 리셋한다.
 ```
 
 ### config
@@ -313,13 +314,39 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
   ssh -T git@github-newaccount.com # 명령을 실행했을 때 "Hi {id_rsa에 등록된 email주소}! You've successfully 
   ```
 
-### Trouble shooting
-Permission Deny 혹은 not found(404)가 발생한다면, ssh-add 된것을 다 지우고 다시 .ssh/config에 추가한 순서대로 ssh-add를 해준다.
+### Permission Deny 혹은 not found(404)가 발생하는 경우
+ssh-add 된것을 다 지우고 다시 .ssh/config에 추가한 순서대로 ssh-add를 해준다.
 ```bash
 eval "$(ssh-agent -s)" # agent 초기화
 ssh-add -D # ssh-add 된것들 모두삭제
 ssh-add ~/.ssh/id_rsa # .ssh/config에 있는 첫번째 항목 추가
 ssh-add ~/.ssh/id_rsa_mydomain # 두번째 항목추가
+```
+
+### not found 404가 발생하는 경우
+우선 github에 해당 ssh키의 pub키가 등록되어있는지 확인이 필요하다.
+`.ssh/id_rsa_mydomain.pub | pbcopy` 이렇게 복사하여 이 값을
+Github > Settings > SSH and GPG Keys에서 New SSH Key로 등록해본다.
+이미 ssh키가 있는 경우 중복 등록은 안된다.
+ssh-add list를 확인하도록 한다. 
+
+```bash
+### .ssh/config에 아래와 같이 두개의 ssh가 등록되어 있는경우 ###
+# ------------------------------------------
+# Host github.com
+#   AddKeysToAgent yes
+#   UseKeychain yes
+#   IdentityFile ~/.ssh/id_ed25519
+# 
+# Host github-dev
+#     HostName github.com
+#     User git
+#     IdentityFile ~/.ssh/id_rsa_mydomain
+# ------------------------------------------
+
+ssh-add -l # list 확인
+ssh-add ~/.ssh/id_rsa_mydomain # 리스트에 없다면 새로 추가
+ssh -T git@github-dev # ssh 연결확인
 ```
 
 ## git-user로 계정 스위칭하기

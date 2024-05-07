@@ -8,7 +8,7 @@ toc: true
 tags: ["backend"]
 categories: ["backend"]
 createdDate: 2024-01-19
-updatedDate: 2024-01-21
+updatedDate: 2024-03-26
 ---
 
 # postgresql
@@ -20,6 +20,12 @@ brew services start postgresql # 실행
 
 psql -h localhost -d test # test database 접속
 psql -U admin -d blog # blog database에 admin 계정으로 접속
+
+# role "postgres" does not exist 에러 발생시
+# https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist
+# 이 경우에는 비번이 없기 때문에 postgresql://postgres@localhost/database_name으로 접속하면 된다.
+createuser -s postgres
+brew services restart postgresql
 ```
 
 ## Database 기본 명령어

@@ -8,12 +8,40 @@ toc: true
 tags: ["algorithms-and-data-structures"]
 categories: ["algorithms-and-data-structures"]
 createdDate: 2024-01-23
-updatedDate: 2024-01-23
+updatedDate: 2024-03-31
 ---
 
 # Leetcode
 
-## leetcode cli 적용방법
+## leetcode-cli 적용
+- https://github.com/clearloop/leetcode-cli?tab=readme-ov-file
+```
+cargo install leetcode-cli
+```
+
+edit `.leetcode/leetcode.toml`
+```toml
+[code]
+editor = 'nvim'
+lang = 'javascript'
+
+[cookies]
+csrf ='' # leetcode에서 Application -> Cookies -> csrf로 확인
+session = '' # leetcode에서 Application -> Cookies -> LEETCODE_SESSION로 확인
+
+[storage]
+cache = 'Problems'
+code = 'code' # ~/.leetcode/code 에 코드 저장됨
+root = '~/.leetcode'
+scripts = 'scripts'
+```
+
+```bash
+leetcode edit 160 # 160번 문제 생성
+leetcode test 160 # 160번 문제 테스트
+```
+
+## leetcode cli 적용방법 (deprecated)
 
 ```bash
 npm -g install HwangTaehyun/leetcode-cli
@@ -56,7 +84,7 @@ leetcode submit {파일명} # 파일을 제출한다.
 ## leetcode cli 제거
 
 ```bash
-npm -g uninstall HwangTaehyun/leetcode-cli
+npm -g uninstall leetcode-cli
 
 # uninstall로 삭제가 제대로 안되는 경우, leetcode 사용경로 확인
 which leetcode
