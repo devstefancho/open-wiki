@@ -8,7 +8,7 @@ toc: true
 tags: ["projects"]
 categories: ["projects"]
 createdDate: 2024-05-06
-updatedDate: 2024-05-11
+updatedDate: 2024-05-12
 ---
 
 # Feconf 지원
@@ -59,39 +59,53 @@ Webrtc 기술을 사용하는게 맞는가 반신반의하며, 일단 시작하�
 최대한 내용을 쉽게 내용을 전달하여 많은 프론트개발자들이 다양한 서비스에 Webrtc 기술을 적용해보았으면 하는 바람입니다.
 
 
-#### Webrtc란 무엇인가?
-- Webrtc의 역사
-- Webrtc 용어설명
-- Webrtc의 강점
-
-
 #### 어떤사람들에게 도움이 될까
 - 화상회의 서비스를 만들어야하거나 만들어보고 싶은 개발자
 - Webrtc 기술에 대해서 궁금했던 사람들
 
 
-#### 어떤 서비스를 만들때 사용하는가?
-- 여러사람이 카메라와 오디오 스트림을 공유하는 서비스
-- 화면공유를 통해 영상을 공유하는 서비스
-- Web 기반의 화상회의 서비스가 필요할 때
+#### Webrtc란 무엇인가?
+- Webrtc의 시작과 현재 진행상황에 대하여
+- Webrtc의 통신방식(Siganling Process)에는 Specification이 없는 이유
+- Webrtc의 강점
+  - 낮은 지연(low latency)
+  - 3rd party 설치 필요없음
+- 캠핑장 만남 약속을 잡는 예시로 Webrtc를 설명
+  - 캠핑장에 따라 가져올 물건이 다름
+  - 어디서 만날지 장소 정해야함
+  - 서로 약속 확답받아야함, 이때 메시지를 주고 받는 것은 문자, 카톡 다양하게 가능
+
+
+#### 어떤 서비스를 만들 수 있는가?
+- Web 기반의 화면공유 서비스
+- Web 기반의 화상회의 서비스
 
 
 #### Webrtc와 관련된 기술들
+
+궁금증 - Webrtc 관련된 WebAPI는 몇개나 될까?
+
 프로토콜 및 프레임워크
 - SDP(Session Description Protocol) 란 무엇인가?
 - SDP를 교환하는 이유
 - SDP를 교환하는 방법
 - ICE(Interactive Connectivity Establishment)란  무엇인가?
 - ICE Candidate는 언제 생성되는가
-- STUN, TURN 서버
+- STUN, TURN 서버는 무엇인가?
 
-API
-- 스트림 생성을 위한 getUserMedia
-- 화면 공유를 위한 getDisplayMedia
+WebRTC API
 - Peer간 연결을 위한 RTCPeerConnection 객체
+
+알고보면 WebRTC API는 아니지만, 필요한 Web API
+- MediaStream API
+- MediaDevices API
+  - 스트림 생성을 위한 getUserMedia
+  - 화면 공유를 위한 getDisplayMedia
+
 
 #### 간단한 데모 시연
 - SDP 교환 이해를 돕기 위한 데모 시연 (백엔드 없는 데모)
+  - Youtube에 상세한 데모 업로드 해둘지 고민중
 
 
 #### 화상회의를 위한 도메인 지식
@@ -146,10 +160,11 @@ API
 #### 나의 팁
 
 - 데모페이지는 무조건 만들자
-- 데모페이지는 단계적으로 만들자
-- 테스트를 고려하여 기능을 추가하자
+- 테스트 방법을 먼저 고민하고 기능을 추가하자
 - 내가 본 Webrtc 학습에 도움이 되는 미디어 추천
-  - MDN, Udemy Course 링크, Youtube 링크
+  - MDN Web Docs
+  - Udemy Course 링크
+  - Youtube 링크
 
 
 #### 기타내용
