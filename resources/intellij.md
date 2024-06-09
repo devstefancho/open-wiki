@@ -8,7 +8,7 @@ toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2023-08-31
-updatedDate: 2024-01-23
+updatedDate: 2024-06-09
 ---
 
 # IntelliJ
@@ -24,11 +24,18 @@ updatedDate: 2024-01-23
 """"""""""""""""""""""""
 "" Default
 """"""""""""""""""""""""
+let mapleader = " "
+vmap <leader>p "_dP
+set rnu
+set nu
 set hlsearch
 set scrolloff=3
+set visualbell
 set ignorecase smartcase
 imap jk <esc>
-nnoremap <space>n :nohlsearch<cr>
+nnoremap <Leader>n :noh<CR>
+set clipboard=unnamed
+set clipboard^=ideaput
 
 """"""""""""""""""""""""
 "" Action
@@ -52,6 +59,5 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 nnoremap <space>e :NERDTreeToggle<cr>
-
 ```
 5. Preference에서 prettier format on Save 설정하기
