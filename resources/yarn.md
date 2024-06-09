@@ -8,7 +8,7 @@ toc: true
 tags: ["resources"]
 categories: ["resources"]
 createdDate: 2024-01-07
-updatedDate: 2024-01-23
+updatedDate: 2024-06-09
 ---
 
 # Yarn
@@ -35,3 +35,19 @@ git commit . # commit all changes
 yarn --version # 버전확인
 ```
 
+## packageManager 설정하기
+만약 yarn 의 legacy 버전을 사용해야하는 경우, 해당 프로젝트에서 packageManager를 설정하면 된다.
+
+```bash
+mkdir yarn-legacy-version-test
+cd yarn-legacy-version-test
+yarn init
+
+## yarn 설치를 하고, 아래와 같이 package.json에서 packageManager를 설정한다.
+# {
+#   "name": "yarn-legacy-version-test",
+#   "packageManager": "yarn@1.22.18"
+# }
+
+yarn -v # 1.22.18
+```
