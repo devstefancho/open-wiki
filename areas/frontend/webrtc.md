@@ -8,7 +8,7 @@ toc: true
 tags: ["frontend"]
 categories: ["frontend"]
 createdDate: 2024-03-17
-updatedDate: 2024-03-20
+updatedDate: 2024-07-28
 ---
 
 # Webrtc
@@ -87,5 +87,21 @@ MediaRecorder.start
 PeerConnection.addTrack
 - add a track to the connection (this is needed after creating the connection)
 - https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/addTrack
+
+## Memo
+icecandidate 이벤트 발생전에 pc.localDescription 값을 가져오면, icecandidate 정보가 빠지게 된다.
+SDP 정보에 `c=IN IP4 192.168.219.112`와 같이 ip 정보가 있어야 한다.
+없다고 하더라도 에러는 나지 않기 때문에 주의가 필요하다. (3시간 동안 삽질함)
+```js
+peerConnection.onicecandidate = async (event) => {
+    //Event that fires off when a new answer ICE candidate is created
+    if(event.candidate){
+        document.getElementById('answer-sdp').value = JSON.stringify(peerConnection.localDescription)
+    }
+};
+```
+
+
+
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Signaling_and_video_calling
